@@ -1,0 +1,18 @@
+.propos {
+  background: white;
+}
+.propos-title {
+  font-size: 60px;
+  margin: 28px 0;
+  font-family: light;
+  letter-spacing: -1px;
+}
+.propos-text {
+  width: 710px;
+  text-align: center;
+  margin: auto;
+  font-family: light;
+  letter-spacing: 0px;
+  line-height: 28px;
+  margin-bottom: 28px;
+}

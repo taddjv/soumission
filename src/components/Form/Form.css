@@ -1,0 +1,184 @@
+input {
+  font-family: light;
+  letter-spacing: 0px;
+  font-size: 16px;
+  background: #d6d6d6;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 40px;
+  padding: 3px;
+  padding-left: 10px;
+}
+input:hover {
+  box-shadow: 0 0.5px black;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0.5px black;
+}
+.PhoneInputCountryIconImg,
+.PhoneInputCountrySelect {
+  display: none;
+}
+textarea {
+  font-family: light;
+  letter-spacing: 0px;
+  font-size: 16px;
+  background: #d6d6d6;
+  border: 1px solid black;
+  height: 120px;
+  width: 420px;
+  padding: 3px;
+  padding-left: 10px;
+}
+textarea:hover {
+  -webkit-box-shadow: 0 0.5px black;
+  -moz-box-shadow: 0 0.5px black;
+  box-shadow: 0 0.5px black;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0.5px black;
+}
+.form {
+  margin-top: 86px;
+}
+.form-top {
+  padding: 28px 0;
+}
+.ft-title {
+  font-size: 60px;
+  margin: 28px 0;
+  font-family: light;
+  letter-spacing: -1px;
+}
+.ft-text {
+  width: 710px;
+  text-align: center;
+  margin: auto;
+  font-family: light;
+  letter-spacing: 0px;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+.form-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  position: relative;
+}
+.fb-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.fb-right {
+  background: #d6d6d6;
+  font-family: light;
+  letter-spacing: 0px;
+  padding: 20px 0;
+  height: -webkit-fill-available;
+}
+.fbr-title {
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-family: regular;
+}
+.fbr-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.fbrf-labels {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+.fbrf-labels > label {
+  display: block;
+  width: 200px;
+  text-align: start;
+}
+.fbrf-labels input {
+  width: 200px;
+}
+
+.fbr-form > label {
+  display: block;
+  width: 420px;
+  text-align: start;
+}
+.fbr-form > label > input {
+  width: 420px;
+}
+.PhoneInputInput {
+  width: 420px;
+}
+/* 420px 40px */
+.fbrf-options {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+legend {
+  margin-bottom: 12px;
+}
+.fbrf-options > label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#temporaire,
+#permanante,
+#hypothecaire {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  height: 18px;
+  width: 18px;
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.fbrf-options > label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.fbrf-options > label input:checked ~ .checkmark {
+  background-color: #605e5e;
+}
+.fbrf-button {
+  width: 142px;
+  height: 40px;
+  text-align: center;
+  font-family: light;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: white;
+  background: rgba(0, 174, 239, 1);
+  border: 1px solid rgba(0, 174, 239, 1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.fbrf-button:hover {
+  color: rgba(0, 174, 239, 1);
+  background: white;
+  border: 1px solid rgba(0, 174, 239, 1);
+}
