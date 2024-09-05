@@ -5,10 +5,17 @@ import banner from "../../assets/hands.jpg";
 import insurance from "../../assets/insurance.png";
 import disability from "../../assets/disability.png";
 import medical from "../../assets/medical.png";
+import { motion } from "framer-motion";
 
 function Products() {
   return (
-    <div className="products">
+    <motion.div
+      className="products"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+    >
       <img className="products-image" src={banner} alt="" />
       <div className="group-products">
         {" "}
@@ -57,7 +64,7 @@ function Products() {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

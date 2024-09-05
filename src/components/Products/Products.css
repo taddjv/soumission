@@ -3,6 +3,7 @@
   width: 100%;
   height: 640px;
   background: rgba(0, 174, 239, 0.13);
+  scroll-margin: 86px;
 }
 
 .products-image {

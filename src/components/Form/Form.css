@@ -2,7 +2,7 @@ input {
   font-family: light;
   letter-spacing: 0px;
   font-size: 16px;
-  background: #d6d6d6;
+  /* background: #d6d6d6; */
   border: none;
   border-bottom: 1px solid black;
   height: 40px;
@@ -24,7 +24,7 @@ textarea {
   font-family: light;
   letter-spacing: 0px;
   font-size: 16px;
-  background: #d6d6d6;
+  /* background: #d6d6d6; */
   border: 1px solid black;
   height: 120px;
   width: 420px;
@@ -42,6 +42,8 @@ textarea:focus {
 }
 .form {
   margin-top: 86px;
+  transition: 0.3s;
+  scroll-margin: 86px;
 }
 .form-top {
   padding: 28px 0;
@@ -64,7 +66,10 @@ textarea:focus {
 .form-bottom {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 56px;
   position: relative;
 }
 .fb-left {
@@ -77,14 +82,14 @@ textarea:focus {
   object-fit: cover;
 }
 .fb-right {
-  background: #d6d6d6;
+  /* background: #d6d6d6; */
   font-family: light;
   letter-spacing: 0px;
   padding: 20px 0;
   height: -webkit-fill-available;
 }
 .fbr-title {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 40px;
   font-family: regular;
 }
@@ -154,7 +159,7 @@ legend {
   transform: translate(0, -50%);
   height: 18px;
   width: 18px;
-  background-color: #d6d6d6;
+  /* background-color: #d6d6d6; */
   border-radius: 50%;
   border: 1px solid black;
 }
@@ -162,7 +167,7 @@ legend {
   background-color: #ccc;
 }
 .fbrf-options > label input:checked ~ .checkmark {
-  background-color: #605e5e;
+  background-color: rgba(0, 174, 239, 1);
 }
 .fbrf-button {
   width: 142px;
