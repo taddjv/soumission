@@ -19,73 +19,81 @@ function App() {
     [0, 1],
     ["0 -100px", "0 400px"]
   );
+  window.onresize = function () {
+    document.body.height = window.innerHeight;
+  };
+  window.onresize(); // called to initially set the height.
 
   return (
-    <div className="App">
-      <AnimatePresence mode="wait">
-        <Router>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Header />
-                  <motion.div
-                    className="background"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    <motion.img
-                      style={{ objectPosition }}
-                      src={background}
-                      alt="background"
-                      className="back-image"
-                    />
-                  </motion.div>
-                  <Banner />
-                  <Propos />
-                  <Products />
-                  <Infos />
-                  <Footer />
-                </>
-              }
-            />
-            <Route
-              path="/assurance-vie"
-              element={
-                <>
-                  <Header />
-                  <Form data={data.vie} />
-                  <Footer />
-                </>
-              }
-            />
-            <Route
-              path="/assurance-invalidite"
-              element={
-                <>
-                  <Header />
-                  <Form data={data.invalidite} />
-                  <Footer />
-                </>
-              }
-            />
-            <Route
-              path="/assurance-maladie-grave"
-              element={
-                <>
-                  <Header />
-                  <Form data={data.maladie} />
-                  <Footer />
-                </>
-              }
-            />
-          </Routes>
-        </Router>
-      </AnimatePresence>
-    </div>
+    <>
+      
+      <div className="App">
+        <AnimatePresence mode="wait">
+          <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Header />
+                    <motion.div
+                      className="background"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                    >
+                      <img
+                        style={{ objectPosition }}
+                        src={background}
+                        alt="background"
+                        className="back-image"
+                      />
+                    </motion.div>
+                    <Banner />
+                    <Propos />
+                    <Products />
+
+                    <Infos />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/assurance-vie"
+                element={
+                  <>
+                    <Header />
+                    <Form data={data.vie} />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/assurance-invalidite"
+                element={
+                  <>
+                    <Header />
+                    <Form data={data.invalidite} />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route
+                path="/assurance-maladie-grave"
+                element={
+                  <>
+                    <Header />
+                    <Form data={data.maladie} />
+                    <Footer />
+                  </>
+                }
+              />
+            </Routes>
+          </Router>
+        </AnimatePresence>
+      </div>
+    </>
   );
 }
 

@@ -1,9 +1,10 @@
 .propos {
   background: white;
+  padding: 28px 0;
 }
 .propos-title {
   font-size: 60px;
-  margin: 28px 0;
+  margin-bottom: 28px;
   font-family: light;
   letter-spacing: -1px;
 }
@@ -14,5 +15,14 @@
   font-family: light;
   letter-spacing: 0px;
   line-height: 28px;
-  margin-bottom: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .propos-text {
+    width: stretch;
+  }
+  .propos {
+    background: white;
+    padding: 28px 20px;
+  }
 }

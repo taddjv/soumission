@@ -7,6 +7,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 86px;
+  position: relative;
 }
 .banner-title {
   font-size: 88px;
@@ -16,7 +17,7 @@
 }
 .banner-phrase {
   font-size: 36px;
-  font-family: heavy;
+  font-family: light;
   letter-spacing: -1px;
   margin-bottom: 18px;
 }
@@ -35,3 +36,13 @@
   background: rgba(0, 174, 239, 1);
 }
 /* 96, 94, 94; */
+
+@media screen and (max-width: 978px) {
+  .banner-title {
+    font-size: 48px;
+    line-height: 40px;
+    margin: 0;
+    font-family: heavy;
+    letter-spacing: -1px;
+  }
+}

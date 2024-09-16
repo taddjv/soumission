@@ -12,7 +12,6 @@
 .footer-top {
   display: flex;
   justify-content: space-between;
-  width: 920px;
   /* margin: auto; */
   height: fit-content;
 }
@@ -22,7 +21,6 @@
   letter-spacing: 0px;
 }
 .footer-bottom {
-  width: 920px;
   /* margin: auto; */
   font-size: 14px;
   font-family: light;

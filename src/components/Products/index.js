@@ -16,9 +16,8 @@ function Products() {
       exit={{ opacity: 0 }}
       transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
     >
-      <img className="products-image" src={banner} alt="" />
       <div className="group-products">
-        {" "}
+        <img className="products-image" src={banner} alt="" />{" "}
         <div className="product">
           <div className="p-logo">
             <img alt="insurance" src={insurance} className="pl-image" />

@@ -21,4 +21,5 @@ const data = {
     image: sick,
   },
 };
+
 export default data;

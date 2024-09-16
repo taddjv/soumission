@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: center;
   gap: 64px;
+  background: white;
+  padding: 0 20px;
 }
 .infos-text {
   display: inline-block;
@@ -41,4 +43,24 @@
   color: rgba(0, 174, 239, 1);
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(0, 174, 239, 1);
+}
+@media screen and (max-width: 765px) {
+  .infos {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+    height: fit-content;
+  }
+  .infos-text {
+    font-size: 14px;
+    font-family: light;
+    letter-spacing: 0px;
+    line-height: 20px;
+    width: stretch;
+    text-align: center;
+  }
+  .infos-button {
+    width: 142px;
+    height: 40px;
+  }
 }
