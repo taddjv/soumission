@@ -17,7 +17,7 @@ const Form = ({ data }) => {
   useEffect(() => {
     const element = document.querySelector(".form");
     element.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, [window.location.pathname]);
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();

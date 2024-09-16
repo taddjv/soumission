@@ -7,7 +7,7 @@ import disability from "../../assets/disability.png";
 import medical from "../../assets/medical.png";
 import facebook from "../../assets/facebookk.png";
 import { motion } from "framer-motion";
-import { DisplayP3ColorSpace } from "three";
+// import { DisplayP3ColorSpace } from "three";
 // e, è, é, ê, ë
 
 function Header() {
@@ -52,7 +52,9 @@ function Header() {
           e.stopPropagation();
           setOpen(false);
           const element = document.querySelector(".banner");
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         }}
         className="header-left"
       >

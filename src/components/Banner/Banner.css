@@ -8,6 +8,8 @@
   flex-direction: column;
   margin-top: 86px;
   position: relative;
+  overflow: visible;
+  scroll-margin: 86px;
 }
 .banner-title {
   font-size: 88px;
@@ -35,7 +37,6 @@
 .banner-button:hover {
   background: rgba(0, 174, 239, 1);
 }
-/* 96, 94, 94; */
 
 @media screen and (max-width: 978px) {
   .banner-title {

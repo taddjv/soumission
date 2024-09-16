@@ -19,14 +19,9 @@ function App() {
     [0, 1],
     ["0 -100px", "0 400px"]
   );
-  window.onresize = function () {
-    document.body.height = window.innerHeight;
-  };
-  window.onresize(); // called to initially set the height.
 
   return (
     <>
-      
       <div className="App">
         <AnimatePresence mode="wait">
           <Router>

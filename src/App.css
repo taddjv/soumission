@@ -14,17 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  /* If you want to implement it in very old browser-versions */
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-
-  /* The rule below is not implemented in browsers yet */
-  -o-user-select: none;
-
-  /* The rule below is implemented in most browsers by now */
   user-select: none;
   overflow: hidden;
 }

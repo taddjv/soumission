@@ -2,7 +2,6 @@ input {
   font-family: light;
   letter-spacing: 0px;
   font-size: 16px;
-  /* background: #d6d6d6; */
   border: none;
   border-bottom: 1px solid black;
   height: 40px;
@@ -24,7 +23,6 @@ textarea {
   font-family: light;
   letter-spacing: 0px;
   font-size: 16px;
-  /* background: #d6d6d6; */
   border: 1px solid black;
   height: 120px;
   width: 420px;
@@ -43,6 +41,7 @@ textarea:focus {
 .form {
   margin-top: 86px;
   transition: 0.3s;
+  overflow: visible;
   scroll-margin: 86px;
 }
 .form-top {
@@ -66,7 +65,6 @@ textarea:focus {
 .form-bottom {
   display: grid;
   grid-template-columns: 50% 50%;
-  /* width: 100%; */
   max-width: 1200px;
   margin: auto;
   margin-bottom: 56px;
@@ -82,7 +80,6 @@ textarea:focus {
   object-fit: cover;
 }
 .fb-right {
-  /* background: #d6d6d6; */
   font-family: light;
   letter-spacing: 0px;
   padding: 20px 0;
@@ -124,7 +121,6 @@ textarea:focus {
 .PhoneInputInput {
   width: 420px;
 }
-/* 420px 40px */
 .fbrf-options {
   width: 420px;
   display: flex;
@@ -159,7 +155,6 @@ legend {
   transform: translate(0, -50%);
   height: 18px;
   width: 18px;
-  /* background-color: #d6d6d6; */
   border-radius: 50%;
   border: 1px solid black;
 }
